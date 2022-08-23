@@ -131,11 +131,50 @@
                     <navigationItem key="navigationItem" title="Prueba de Ingreso" id="O5t-bR-8Wj"/>
                     <connections>
                         <outlet property="tableView" destination="nlh-8E-uAk" id="mt4-2g-dzu"/>
+                        <segue destination="0mF-6W-Pux" kind="show" identifier="showPost" id="Ujl-3A-I8f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="503" y="-445"/>
+        </scene>
+        <!--Post-->
+        <scene sceneID="gfl-1h-ktN">
+            <objects>
+                <viewController id="0mF-6W-Pux" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="izR-Us-77S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hVD-zq-8QU">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="7QL-Sd-2ya">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7QL-Sd-2ya" id="vWn-tp-9yz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RoE-oy-TWR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RoE-oy-TWR" firstAttribute="bottom" secondItem="hVD-zq-8QU" secondAttribute="bottom" id="9eu-bA-xrV"/>
+                            <constraint firstItem="RoE-oy-TWR" firstAttribute="trailing" secondItem="hVD-zq-8QU" secondAttribute="trailing" id="J1C-vz-tr2"/>
+                            <constraint firstItem="hVD-zq-8QU" firstAttribute="top" secondItem="RoE-oy-TWR" secondAttribute="top" id="ftH-kB-D3E"/>
+                            <constraint firstItem="hVD-zq-8QU" firstAttribute="leading" secondItem="RoE-oy-TWR" secondAttribute="leading" id="iLh-jz-8n8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Post" id="3y9-di-hsq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4iF-1w-Xyn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1321.7391304347827" y="-445.3125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qFz-SZ-tGg">

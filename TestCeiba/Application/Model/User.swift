@@ -7,7 +7,7 @@
 
 import ObjectMapper
 
-public struct User: Mappable {
+public struct Publisher: Mappable {
     
     public var id: Int = 0
     public var name: String = ""

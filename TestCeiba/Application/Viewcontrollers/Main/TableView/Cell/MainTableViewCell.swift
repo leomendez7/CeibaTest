@@ -16,7 +16,7 @@ class MainTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {}
     
-    func configureCell(user: User) {
+    func configureCell(user: Publisher) {
         userNameLabel.text = user.name
         userCelLabel.text = user.phone
         userCelLabel.text = user.email

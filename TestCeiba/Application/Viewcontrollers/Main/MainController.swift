@@ -18,7 +18,6 @@ extension MainViewController {
             }
             self.stopAnimate()
         }
-        
     }
     
 }

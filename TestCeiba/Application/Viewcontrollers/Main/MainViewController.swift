@@ -9,11 +9,16 @@ import UIKit
 
 class MainViewController: BaseViewController, UISearchResultsUpdating {
     
+    enum Segue: String {
+        case showPost
+    }
+    
     let userStore = UserStore()
-    var filteredTableData = [User]()
-    var tableData = [User]()
+    var filteredTableData = [Publisher]()
+    var tableData = [Publisher]()
     var resultSearchController = UISearchController()
-    var users = [User]() {
+    var selectUser = Publisher()
+    var users = [Publisher]() {
         didSet {
             tableData = users
             tableView.reloadData()
@@ -57,6 +62,12 @@ class MainViewController: BaseViewController, UISearchResultsUpdating {
             }
         }
         self.tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? PostViewController {
+            viewController.user = selectUser
+        }
     }
     
 }

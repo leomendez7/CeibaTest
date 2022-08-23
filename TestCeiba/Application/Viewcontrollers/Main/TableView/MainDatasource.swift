@@ -33,7 +33,12 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if resultSearchController.isActive {
+            selectUser = filteredTableData[indexPath.row]
+        } else {
+            selectUser = tableData[indexPath.row]
+        }
+        performSegue(withIdentifier: Segue.showPost.rawValue, sender: nil)
     }
     
 }
