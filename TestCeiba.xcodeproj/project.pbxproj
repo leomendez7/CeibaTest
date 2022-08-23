@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC81999B28B4626400FD5791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC81999A28B4626400FD5791 /* AppDelegate.swift */; };
+		EC81999D28B4626400FD5791 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC81999C28B4626400FD5791 /* SceneDelegate.swift */; };
+		EC8199A228B4626400FD5791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8199A028B4626400FD5791 /* Main.storyboard */; };
+		EC8199A528B4626400FD5791 /* TestCeiba.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC8199A328B4626400FD5791 /* TestCeiba.xcdatamodeld */; };
+		EC8199A728B4626500FD5791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8199A628B4626500FD5791 /* Assets.xcassets */; };
+		EC8199AA28B4626500FD5791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8199A828B4626500FD5791 /* LaunchScreen.storyboard */; };
+		EC8199B728B46EDE00FD5791 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8199B628B46EDE00FD5791 /* MainViewController.swift */; };
+		EC8199BA28B47B7500FD5791 /* MainDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8199B928B47B7500FD5791 /* MainDatasource.swift */; };
+		EC8199BC28B47B8900FD5791 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8199BB28B47B8900FD5791 /* MainTableViewCell.swift */; };
+		EC8199C028B47F2200FD5791 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EC8199BF28B47F2200FD5791 /* Alamofire */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC81999728B4626400FD5791 /* TestCeiba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCeiba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC81999A28B4626400FD5791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC81999C28B4626400FD5791 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC8199A128B4626400FD5791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC8199A428B4626400FD5791 /* TestCeiba.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestCeiba.xcdatamodel; sourceTree = "<group>"; };
+		EC8199A628B4626500FD5791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC8199A928B4626500FD5791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC8199AB28B4626500FD5791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8199B628B46EDE00FD5791 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EC8199B928B47B7500FD5791 /* MainDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDatasource.swift; sourceTree = "<group>"; };
+		EC8199BB28B47B8900FD5791 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC81999428B4626400FD5791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8199C028B47F2200FD5791 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC81998E28B4626400FD5791 = {
+			isa = PBXGroup;
+			children = (
+				EC81999928B4626400FD5791 /* TestCeiba */,
+				EC81999828B4626400FD5791 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC81999828B4626400FD5791 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC81999728B4626400FD5791 /* TestCeiba.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC81999928B4626400FD5791 /* TestCeiba */ = {
+			isa = PBXGroup;
+			children = (
+				EC8199B228B46E9F00FD5791 /* Application */,
+				EC8199B128B46E7B00FD5791 /* Launch */,
+				EC8199A628B4626500FD5791 /* Assets.xcassets */,
+				EC8199AB28B4626500FD5791 /* Info.plist */,
+				EC8199A328B4626400FD5791 /* TestCeiba.xcdatamodeld */,
+			);
+			path = TestCeiba;
+			sourceTree = "<group>";
+		};
+		EC8199B128B46E7B00FD5791 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				EC81999A28B4626400FD5791 /* AppDelegate.swift */,
+				EC81999C28B4626400FD5791 /* SceneDelegate.swift */,
+				EC8199A828B4626500FD5791 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		EC8199B228B46E9F00FD5791 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EC8199B328B46EA700FD5791 /* Viewcontrollers */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EC8199B328B46EA700FD5791 /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				EC8199B428B46EBE00FD5791 /* Main */,
+				EC8199B528B46EC900FD5791 /* Post */,
+			);
+			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		EC8199B428B46EBE00FD5791 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EC8199B828B47A2800FD5791 /* TableView */,
+				EC8199B628B46EDE00FD5791 /* MainViewController.swift */,
+				EC8199A028B4626400FD5791 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EC8199B528B46EC900FD5791 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		EC8199B828B47A2800FD5791 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				EC8199BD28B47BC500FD5791 /* Cell */,
+				EC8199B928B47B7500FD5791 /* MainDatasource.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		EC8199BD28B47BC500FD5791 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EC8199BB28B47B8900FD5791 /* MainTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC81999628B4626400FD5791 /* TestCeiba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8199AE28B4626500FD5791 /* Build configuration list for PBXNativeTarget "TestCeiba" */;
+			buildPhases = (
+				EC81999328B4626400FD5791 /* Sources */,
+				EC81999428B4626400FD5791 /* Frameworks */,
+				EC81999528B4626400FD5791 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestCeiba;
+			packageProductDependencies = (
+				EC8199BF28B47F2200FD5791 /* Alamofire */,
+			);
+			productName = TestCeiba;
+			productReference = EC81999728B4626400FD5791 /* TestCeiba.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC81998F28B4626400FD5791 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					EC81999628B4626400FD5791 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = EC81999228B4626400FD5791 /* Build configuration list for PBXProject "TestCeiba" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC81998E28B4626400FD5791;
+			packageReferences = (
+				EC8199BE28B47F2200FD5791 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = EC81999828B4626400FD5791 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC81999628B4626400FD5791 /* TestCeiba */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC81999528B4626400FD5791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8199AA28B4626500FD5791 /* LaunchScreen.storyboard in Resources */,
+				EC8199A728B4626500FD5791 /* Assets.xcassets in Resources */,
+				EC8199A228B4626400FD5791 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC81999328B4626400FD5791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8199BA28B47B7500FD5791 /* MainDatasource.swift in Sources */,
+				EC81999B28B4626400FD5791 /* AppDelegate.swift in Sources */,
+				EC8199A528B4626400FD5791 /* TestCeiba.xcdatamodeld in Sources */,
+				EC8199B728B46EDE00FD5791 /* MainViewController.swift in Sources */,
+				EC8199BC28B47B8900FD5791 /* MainTableViewCell.swift in Sources */,
+				EC81999D28B4626400FD5791 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC8199A028B4626400FD5791 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC8199A128B4626400FD5791 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC8199A828B4626500FD5791 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC8199A928B4626500FD5791 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC8199AC28B4626500FD5791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC8199AD28B4626500FD5791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC8199AF28B4626500FD5791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestCeiba/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ceiba.TestCeiba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC8199B028B4626500FD5791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5MRQMG4R3J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestCeiba/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ceiba.TestCeiba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC81999228B4626400FD5791 /* Build configuration list for PBXProject "TestCeiba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8199AC28B4626500FD5791 /* Debug */,
+				EC8199AD28B4626500FD5791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8199AE28B4626500FD5791 /* Build configuration list for PBXNativeTarget "TestCeiba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8199AF28B4626500FD5791 /* Debug */,
+				EC8199B028B4626500FD5791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC8199BE28B47F2200FD5791 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC8199BF28B47F2200FD5791 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC8199BE28B47F2200FD5791 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		EC8199A328B4626400FD5791 /* TestCeiba.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC8199A428B4626400FD5791 /* TestCeiba.xcdatamodel */,
+			);
+			currentVersion = EC8199A428B4626400FD5791 /* TestCeiba.xcdatamodel */;
+			path = TestCeiba.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EC81998F28B4626400FD5791 /* Project object */;
+}
