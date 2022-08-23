@@ -17,6 +17,7 @@
 		EC8199BA28B47B7500FD5791 /* MainDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8199B928B47B7500FD5791 /* MainDatasource.swift */; };
 		EC8199BC28B47B8900FD5791 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8199BB28B47B8900FD5791 /* MainTableViewCell.swift */; };
 		EC8199C028B47F2200FD5791 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EC8199BF28B47F2200FD5791 /* Alamofire */; };
+		EC8199C528B481FF00FD5791 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8199C428B481FF00FD5791 /* Api.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		EC8199B628B46EDE00FD5791 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EC8199B928B47B7500FD5791 /* MainDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDatasource.swift; sourceTree = "<group>"; };
 		EC8199BB28B47B8900FD5791 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		EC8199C428B481FF00FD5791 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,8 @@
 		EC8199B228B46E9F00FD5791 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				EC8199C228B481E200FD5791 /* Store */,
+				EC8199C128B481D800FD5791 /* Base */,
 				EC8199B328B46EA700FD5791 /* Viewcontrollers */,
 			);
 			path = Application;
@@ -132,6 +136,29 @@
 				EC8199BB28B47B8900FD5791 /* MainTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		EC8199C128B481D800FD5791 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EC8199C328B481F000FD5791 /* Api */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EC8199C228B481E200FD5791 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		EC8199C328B481F000FD5791 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				EC8199C428B481FF00FD5791 /* Api.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +243,7 @@
 				EC8199A528B4626400FD5791 /* TestCeiba.xcdatamodeld in Sources */,
 				EC8199B728B46EDE00FD5791 /* MainViewController.swift in Sources */,
 				EC8199BC28B47B8900FD5791 /* MainTableViewCell.swift in Sources */,
+				EC8199C528B481FF00FD5791 /* Api.swift in Sources */,
 				EC81999D28B4626400FD5791 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
