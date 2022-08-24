@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension MainViewController: UITableViewDataSource, UITableViewDelegate {
+extension UserViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 162
@@ -22,8 +22,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell: MainTableViewCell = tableView.dequeueReusableCell(withIdentifier: "userCell",
-                                                                        for: indexPath) as? MainTableViewCell else { return MainTableViewCell() }
+        guard let cell: UserTableViewCell = tableView.dequeueReusableCell(withIdentifier: "userCell",
+                                                                        for: indexPath) as? UserTableViewCell else { return UserTableViewCell() }
         if resultSearchController.isActive {
             cell.configureCell(user: filteredTableData[indexPath.row])
         } else {

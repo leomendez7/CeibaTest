@@ -9,7 +9,7 @@ import UIKit
 
 class PostViewController: BaseViewController {
     
-    let user = Publisher()
+    var user = Publisher()
     let postStore = PostStore()
     var tableData = [UserPost]()
     var posts = [UserPost]() {

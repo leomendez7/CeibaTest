@@ -8,7 +8,7 @@
 import UIKit
 import Alamofire
 
-extension MainViewController {
+extension UserViewController {
     
     func fetchUsers() {
         playAnimateView()

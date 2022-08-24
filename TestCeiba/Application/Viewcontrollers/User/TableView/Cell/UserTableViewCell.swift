@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainTableViewCell: UITableViewCell {
+class UserTableViewCell: UITableViewCell {
     
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var userCelLabel: UILabel!
@@ -20,10 +20,7 @@ class MainTableViewCell: UITableViewCell {
         userNameLabel.text = user.name
         userCelLabel.text = user.phone
         userCelLabel.text = user.email
-        viewCell.layer.shadowColor = ColorScheme.shadow.cgColor
-        viewCell.layer.shadowOpacity = 1
-        viewCell.layer.shadowOffset = .zero
-        viewCell.layer.shadowRadius = 10
+        viewCell.addShadow()
     }
     
 }

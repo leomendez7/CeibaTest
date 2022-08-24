@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: BaseViewController, UISearchResultsUpdating {
+class UserViewController: BaseViewController, UISearchResultsUpdating {
     
     enum Segue: String {
         case showPost
