@@ -33,7 +33,6 @@ extension PostViewController {
                 let postsDic: NSArray = ManagedParser.convertToArray(managedObjects: postCoreData as NSArray)
                 let posts = Mapper<UserPost>().mapArray(JSONArray: postsDic as? [[String : Any]] ?? [[:]])
                 self.posts = posts
-                posts.forEach { post in print(post.id) }
             } catch let error as NSError {
                 print("Error fetch core data: \(error.localizedDescription)")
             }
@@ -53,7 +52,6 @@ extension PostViewController {
             Default.save(userId: user.id)
             do {
                 try context.save()
-                print("Post \(post["id"] as? String ?? "") save")
             } catch let error as NSError{
                 print("Error save: \(error.localizedDescription)")
             }

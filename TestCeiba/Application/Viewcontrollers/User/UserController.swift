@@ -28,12 +28,11 @@ extension UserViewController {
         do {
             userCoreData = try context?.fetch(fetchRequest) as? [User] ?? []
             let userDic: NSArray = ManagedParser.convertToArray(managedObjects: userCoreData as NSArray)
-            let users = Mapper<Publisher>().mapArray(JSONArray: userDic as? [[String : Any]] ?? [[:]])
+            let users = Mapper<UserMapper>().mapArray(JSONArray: userDic as? [[String : Any]] ?? [[:]])
             if users.count == 0 {
                 fetchUsers()
             } else {
                 self.users = users
-                print("\(users)\n")
             }
         } catch let error as NSError {
             print("Error fetch core data: \(error.localizedDescription)")
@@ -50,7 +49,6 @@ extension UserViewController {
             newUser.email = user["email"] as? String
             do {
                 try context.save()
-                print("User \(user["name"] as? String ?? "") save")
             } catch let error as NSError{
                 print("Error save: \(error.localizedDescription)")
             }

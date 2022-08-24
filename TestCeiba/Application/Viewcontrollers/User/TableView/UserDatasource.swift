@@ -15,7 +15,11 @@ extension UserViewController: UITableViewDataSource, UITableViewDelegate, UserTa
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if resultSearchController.isActive {
-            return filteredTableData.count
+            if filteredTableData.count == 0 {
+                return 1
+            } else {
+                return filteredTableData.count
+            }
         } else {
            return tableData.count
         }
@@ -26,14 +30,18 @@ extension UserViewController: UITableViewDataSource, UITableViewDelegate, UserTa
                                                                         for: indexPath) as? UserTableViewCell else { return UserTableViewCell() }
         cell.delegate = self
         if resultSearchController.isActive {
-            cell.configureCell(user: filteredTableData[indexPath.row])
+            if filteredTableData.count == 0 {
+                cell.ShowEmpty(isEmpty: true)
+            } else {
+                cell.configureCell(user: filteredTableData[indexPath.row])
+            }
         } else {
             cell.configureCell(user: tableData[indexPath.row])
         }
         return cell
     }
     
-    func showPost(user: Publisher) {
+    func showPost(user: UserMapper) {
         selectUser = user
         performSegue(withIdentifier: Segue.showPost.rawValue, sender: nil)
     }
