@@ -36,7 +36,7 @@
 		ECAECE1728B580A7008E7419 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE1628B580A7008E7419 /* PostViewController.swift */; };
 		ECAECE1928B580B3008E7419 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE1828B580B3008E7419 /* PostController.swift */; };
 		ECAECE1C28B580C9008E7419 /* PostDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE1B28B580C9008E7419 /* PostDatasource.swift */; };
-		ECAECE1F28B580DA008E7419 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE1E28B580DA008E7419 /* PostCell.swift */; };
+		ECAECE1F28B580DA008E7419 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE1E28B580DA008E7419 /* PostTableViewCell.swift */; };
 		ECAECE3228B5C01F008E7419 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE3028B5C01F008E7419 /* UserController.swift */; };
 		ECAECE3328B5C01F008E7419 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE3128B5C01F008E7419 /* UserViewController.swift */; };
 		ECAECE3628B5C02E008E7419 /* UserDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE3528B5C02E008E7419 /* UserDatasource.swift */; };
@@ -73,7 +73,7 @@
 		ECAECE1628B580A7008E7419 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		ECAECE1828B580B3008E7419 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 		ECAECE1B28B580C9008E7419 /* PostDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDatasource.swift; sourceTree = "<group>"; };
-		ECAECE1E28B580DA008E7419 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		ECAECE1E28B580DA008E7419 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		ECAECE3028B5C01F008E7419 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		ECAECE3128B5C01F008E7419 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		ECAECE3528B5C02E008E7419 /* UserDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDatasource.swift; sourceTree = "<group>"; };
@@ -319,7 +319,7 @@
 		ECAECE1D28B580CD008E7419 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				ECAECE1E28B580DA008E7419 /* PostCell.swift */,
+				ECAECE1E28B580DA008E7419 /* PostTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -328,8 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				ECAECE3428B5C022008E7419 /* TableView */,
-				ECAECE3028B5C01F008E7419 /* UserController.swift */,
 				ECAECE3128B5C01F008E7419 /* UserViewController.swift */,
+				ECAECE3028B5C01F008E7419 /* UserController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -447,7 +447,7 @@
 				ECAECE1C28B580C9008E7419 /* PostDatasource.swift in Sources */,
 				EC8199EC28B5197700FD5791 /* UserRoute.swift in Sources */,
 				EC8199DA28B5164800FD5791 /* RequestHeaders.swift in Sources */,
-				ECAECE1F28B580DA008E7419 /* PostCell.swift in Sources */,
+				ECAECE1F28B580DA008E7419 /* PostTableViewCell.swift in Sources */,
 				ECAECE0928B538A7008E7419 /* KeyboardAwareConstraint.swift in Sources */,
 				EC8199D428B5161B00FD5791 /* Router.swift in Sources */,
 				EC8199D728B5163500FD5791 /* APIQuery.swift in Sources */,

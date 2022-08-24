@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UserViewController: UITableViewDataSource, UITableViewDelegate {
+extension UserViewController: UITableViewDataSource, UITableViewDelegate, UserTableViewCellDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 162
@@ -24,6 +24,7 @@ extension UserViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell: UserTableViewCell = tableView.dequeueReusableCell(withIdentifier: "userCell",
                                                                         for: indexPath) as? UserTableViewCell else { return UserTableViewCell() }
+        cell.delegate = self
         if resultSearchController.isActive {
             cell.configureCell(user: filteredTableData[indexPath.row])
         } else {
@@ -32,12 +33,8 @@ extension UserViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if resultSearchController.isActive {
-            selectUser = filteredTableData[indexPath.row]
-        } else {
-            selectUser = tableData[indexPath.row]
-        }
+    func showPost(user: Publisher) {
+        selectUser = user
         performSegue(withIdentifier: Segue.showPost.rawValue, sender: nil)
     }
     
