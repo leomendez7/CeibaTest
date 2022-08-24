@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Usuarios-->
+        <!--Users-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="UserViewController" customModule="TestCeiba" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,6 +30,17 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALG-Qq-KcU">
                                                     <rect key="frame" x="8" y="8" width="398" height="146"/>
                                                     <subviews>
+                                                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Q7s-LE-Tnc">
+                                                            <rect key="frame" x="0.0" y="0.0" width="398" height="146"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List is empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phm-vX-nEf">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="146"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aD5-gW-XRm">
                                                             <rect key="frame" x="8" y="15.5" width="382" height="68.5"/>
                                                             <subviews>
@@ -78,27 +89,34 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qh0-ib-yL3">
-                                                            <rect key="frame" x="236" y="100" width="154" height="30"/>
+                                                            <rect key="frame" x="270" y="100" width="120" height="30"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-JM-VpG">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="154" height="30"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-JM-VpG">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                     <color key="tintColor" red="0.22352941179999999" green="0.37647058820000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                    <state key="normal" title="VER PUBLICACIONES"/>
+                                                                    <state key="normal" title="SHOW POST"/>
                                                                     <connections>
                                                                         <action selector="showPost:" destination="8Kv-oi-C8z" eventType="touchUpInside" id="zt8-kd-ZBa"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="V9V-1g-Gt3"/>
+                                                            </constraints>
                                                         </stackView>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstItem="aD5-gW-XRm" firstAttribute="top" secondItem="ALG-Qq-KcU" secondAttribute="top" constant="15.5" id="1f3-ia-9Ak"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Q7s-LE-Tnc" secondAttribute="trailing" id="Nz1-EI-BfK"/>
                                                         <constraint firstAttribute="trailing" secondItem="aD5-gW-XRm" secondAttribute="trailing" constant="8" id="XBp-GQ-Mtk"/>
+                                                        <constraint firstItem="Q7s-LE-Tnc" firstAttribute="top" secondItem="ALG-Qq-KcU" secondAttribute="top" id="Z8x-T6-h2i"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Q7s-LE-Tnc" secondAttribute="bottom" id="dHb-2i-3Ug"/>
                                                         <constraint firstAttribute="bottom" secondItem="qh0-ib-yL3" secondAttribute="bottom" constant="16" id="na9-RD-7v4"/>
                                                         <constraint firstItem="aD5-gW-XRm" firstAttribute="leading" secondItem="ALG-Qq-KcU" secondAttribute="leading" constant="8" id="nqo-2D-YeZ"/>
+                                                        <constraint firstItem="Q7s-LE-Tnc" firstAttribute="leading" secondItem="ALG-Qq-KcU" secondAttribute="leading" id="uUh-22-2Cu"/>
                                                         <constraint firstAttribute="trailing" secondItem="qh0-ib-yL3" secondAttribute="trailing" constant="8" id="yT4-u6-2Y7"/>
                                                     </constraints>
                                                 </view>
@@ -111,7 +129,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="ShowPostStackView" destination="qh0-ib-yL3" id="YRr-OV-VHu"/>
+                                            <outlet property="emptyStackView" destination="Q7s-LE-Tnc" id="Nx1-Tc-WNi"/>
                                             <outlet property="userEmailLabel" destination="xQO-jg-V4s" id="e6f-Da-2o1"/>
+                                            <outlet property="userInfoStackView" destination="aD5-gW-XRm" id="Irh-j3-Go2"/>
                                             <outlet property="userNameLabel" destination="vkq-Oq-3nt" id="5qR-DN-zjM"/>
                                             <outlet property="userPhoneLabel" destination="QiR-0Y-WDg" id="FoY-1C-UMK"/>
                                             <outlet property="viewCell" destination="ALG-Qq-KcU" id="Yih-YK-Ccz"/>
@@ -127,13 +148,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="nlh-8E-uAk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2nU-a6-LFJ"/>
-                            <constraint firstItem="nlh-8E-uAk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Pk4-sU-vy1"/>
-                            <constraint firstItem="nlh-8E-uAk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ukh-4c-lIV"/>
-                            <constraint firstItem="nlh-8E-uAk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xwz-Dw-Pxe"/>
+                            <constraint firstItem="nlh-8E-uAk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Had-Hn-YYO"/>
+                            <constraint firstItem="nlh-8E-uAk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dkN-tN-3oh"/>
+                            <constraint firstItem="nlh-8E-uAk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tvF-zV-dOz"/>
+                            <constraint firstItem="nlh-8E-uAk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="vIh-Zt-OqN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Usuarios" id="O5t-bR-8Wj"/>
+                    <navigationItem key="navigationItem" title="Users" id="O5t-bR-8Wj"/>
                     <connections>
                         <outlet property="tableView" destination="nlh-8E-uAk" id="mt4-2g-dzu"/>
                         <segue destination="0mF-6W-Pux" kind="show" identifier="showPost" id="Ujl-3A-I8f"/>

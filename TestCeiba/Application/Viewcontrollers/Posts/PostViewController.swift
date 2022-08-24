@@ -9,8 +9,9 @@ import UIKit
 
 class PostViewController: BaseViewController {
     
-    var user = Publisher()
+    var user = UserMapper()
     let postStore = PostStore()
+    var postCoreData = [Post]()
     var tableData = [UserPost]()
     var posts = [UserPost]() {
         didSet {
@@ -27,7 +28,7 @@ class PostViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUser()
-        fetchPost()
+        fetchPostCoreData()
     }
     
     func configureUser() {

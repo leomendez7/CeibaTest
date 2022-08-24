@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class UserViewController: BaseViewController, UISearchResultsUpdating {
     
@@ -14,11 +15,12 @@ class UserViewController: BaseViewController, UISearchResultsUpdating {
     }
     
     let userStore = UserStore()
-    var filteredTableData = [Publisher]()
-    var tableData = [Publisher]()
+    var filteredTableData = [UserMapper]()
+    var tableData = [UserMapper]()
+    var userCoreData = [User]()
     var resultSearchController = UISearchController()
-    var selectUser = Publisher()
-    var users = [Publisher]() {
+    var selectUser = UserMapper()
+    var users = [UserMapper]() {
         didSet {
             tableData = users
             tableView.reloadData()
@@ -29,7 +31,7 @@ class UserViewController: BaseViewController, UISearchResultsUpdating {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchUsers()
+        fetchUserCoreData()
         resultSearchConfig()
     }
     
@@ -38,7 +40,7 @@ class UserViewController: BaseViewController, UISearchResultsUpdating {
             let controller = UISearchController(searchResultsController: nil)
             controller.searchResultsUpdater = self
             controller.searchBar.sizeToFit()
-            controller.searchBar.placeholder = "Buscar usuario"
+            controller.searchBar.placeholder = "Search user"
             controller.searchBar.returnKeyType = UIReturnKeyType.done
             controller.searchBar.enablesReturnKeyAutomatically = false
             controller.obscuresBackgroundDuringPresentation = false

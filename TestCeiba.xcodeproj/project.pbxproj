@@ -29,7 +29,6 @@
 		EC8199F928B532CE00FD5791 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EC8199F828B532CE00FD5791 /* Lottie */; };
 		ECAECE0728B53738008E7419 /* ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE0628B53738008E7419 /* ViewLayout.swift */; };
 		ECAECE0928B538A7008E7419 /* KeyboardAwareConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE0828B538A7008E7419 /* KeyboardAwareConstraint.swift */; };
-		ECAECE0B28B539FB008E7419 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = ECAECE0A28B539FB008E7419 /* loading.json */; };
 		ECAECE0F28B57C46008E7419 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE0E28B57C46008E7419 /* Post.swift */; };
 		ECAECE1228B57CCE008E7419 /* PostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE1128B57CCE008E7419 /* PostStore.swift */; };
 		ECAECE1428B57CDC008E7419 /* PostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE1328B57CDC008E7419 /* PostRouter.swift */; };
@@ -42,6 +41,13 @@
 		ECAECE3628B5C02E008E7419 /* UserDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE3528B5C02E008E7419 /* UserDatasource.swift */; };
 		ECAECE3928B5C042008E7419 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE3828B5C042008E7419 /* UserTableViewCell.swift */; };
 		ECAECE3D28B5C07D008E7419 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE3C28B5C07D008E7419 /* UIView.swift */; };
+		ECAECE4428B67431008E7419 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE4028B67431008E7419 /* Post+CoreDataClass.swift */; };
+		ECAECE4528B67431008E7419 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE4128B67431008E7419 /* Post+CoreDataProperties.swift */; };
+		ECAECE4C28B6AB3D008E7419 /* ManagedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE4B28B6AB3D008E7419 /* ManagedParser.swift */; };
+		ECAECE5328B6B046008E7419 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE5128B6B046008E7419 /* User+CoreDataClass.swift */; };
+		ECAECE5428B6B046008E7419 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE5228B6B046008E7419 /* User+CoreDataProperties.swift */; };
+		ECAECE5728B6BBCE008E7419 /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE5628B6BBCE008E7419 /* Default.swift */; };
+		ECAECE5E28B6E4DC008E7419 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = ECAECE5D28B6E4DC008E7419 /* loading.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,7 +72,6 @@
 		EC8199F528B5318F00FD5791 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		ECAECE0628B53738008E7419 /* ViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayout.swift; sourceTree = "<group>"; };
 		ECAECE0828B538A7008E7419 /* KeyboardAwareConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAwareConstraint.swift; sourceTree = "<group>"; };
-		ECAECE0A28B539FB008E7419 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		ECAECE0E28B57C46008E7419 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		ECAECE1128B57CCE008E7419 /* PostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStore.swift; sourceTree = "<group>"; };
 		ECAECE1328B57CDC008E7419 /* PostRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRouter.swift; sourceTree = "<group>"; };
@@ -79,6 +84,13 @@
 		ECAECE3528B5C02E008E7419 /* UserDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDatasource.swift; sourceTree = "<group>"; };
 		ECAECE3828B5C042008E7419 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		ECAECE3C28B5C07D008E7419 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		ECAECE4028B67431008E7419 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ECAECE4128B67431008E7419 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ECAECE4B28B6AB3D008E7419 /* ManagedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedParser.swift; sourceTree = "<group>"; };
+		ECAECE5128B6B046008E7419 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ECAECE5228B6B046008E7419 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ECAECE5628B6BBCE008E7419 /* Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
+		ECAECE5D28B6E4DC008E7419 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,11 +179,12 @@
 		EC8199C128B481D800FD5791 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				ECAECE3B28B5C06B008E7419 /* View */,
-				ECAECE0528B53720008E7419 /* Layout */,
-				EC8199F428B5317D00FD5791 /* ViewController */,
-				EC8199F128B52E4000FD5791 /* Styles */,
 				EC8199C328B481F000FD5791 /* Api */,
+				ECAECE4A28B6AB26008E7419 /* Array */,
+				ECAECE0528B53720008E7419 /* Layout */,
+				EC8199F128B52E4000FD5791 /* Styles */,
+				ECAECE3B28B5C06B008E7419 /* View */,
+				EC8199F428B5317D00FD5791 /* ViewController */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -179,6 +192,7 @@
 		EC8199C228B481E200FD5791 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				ECAECE5528B6BBC0008E7419 /* Default */,
 				EC8199E428B5176100FD5791 /* User */,
 				ECAECE1028B57CBF008E7419 /* Post */,
 			);
@@ -258,6 +272,7 @@
 		EC8199E528B517E400FD5791 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ECAECE5828B6DECB008E7419 /* CoreData */,
 				EC8199E728B5180200FD5791 /* User.swift */,
 				ECAECE0E28B57C46008E7419 /* Post.swift */,
 			);
@@ -293,7 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				EC8199A628B4626500FD5791 /* Assets.xcassets */,
-				ECAECE0A28B539FB008E7419 /* loading.json */,
+				ECAECE5D28B6E4DC008E7419 /* loading.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -357,6 +372,33 @@
 				ECAECE3C28B5C07D008E7419 /* UIView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		ECAECE4A28B6AB26008E7419 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				ECAECE4B28B6AB3D008E7419 /* ManagedParser.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		ECAECE5528B6BBC0008E7419 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				ECAECE5628B6BBCE008E7419 /* Default.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		ECAECE5828B6DECB008E7419 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				ECAECE5128B6B046008E7419 /* User+CoreDataClass.swift */,
+				ECAECE5228B6B046008E7419 /* User+CoreDataProperties.swift */,
+				ECAECE4028B67431008E7419 /* Post+CoreDataClass.swift */,
+				ECAECE4128B67431008E7419 /* Post+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,7 +471,7 @@
 			files = (
 				EC8199AA28B4626500FD5791 /* LaunchScreen.storyboard in Resources */,
 				EC8199A728B4626500FD5791 /* Assets.xcassets in Resources */,
-				ECAECE0B28B539FB008E7419 /* loading.json in Resources */,
+				ECAECE5E28B6E4DC008E7419 /* loading.json in Resources */,
 				EC8199A228B4626400FD5791 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,12 +487,14 @@
 				ECAECE1928B580B3008E7419 /* PostController.swift in Sources */,
 				ECAECE1728B580A7008E7419 /* PostViewController.swift in Sources */,
 				ECAECE1C28B580C9008E7419 /* PostDatasource.swift in Sources */,
+				ECAECE4C28B6AB3D008E7419 /* ManagedParser.swift in Sources */,
 				EC8199EC28B5197700FD5791 /* UserRoute.swift in Sources */,
 				EC8199DA28B5164800FD5791 /* RequestHeaders.swift in Sources */,
 				ECAECE1F28B580DA008E7419 /* PostTableViewCell.swift in Sources */,
 				ECAECE0928B538A7008E7419 /* KeyboardAwareConstraint.swift in Sources */,
 				EC8199D428B5161B00FD5791 /* Router.swift in Sources */,
 				EC8199D728B5163500FD5791 /* APIQuery.swift in Sources */,
+				ECAECE5728B6BBCE008E7419 /* Default.swift in Sources */,
 				EC8199F628B5318F00FD5791 /* BaseViewController.swift in Sources */,
 				ECAECE1228B57CCE008E7419 /* PostStore.swift in Sources */,
 				EC81999B28B4626400FD5791 /* AppDelegate.swift in Sources */,
@@ -458,14 +502,18 @@
 				ECAECE3928B5C042008E7419 /* UserTableViewCell.swift in Sources */,
 				EC8199E828B5180200FD5791 /* User.swift in Sources */,
 				EC8199A528B4626400FD5791 /* TestCeiba.xcdatamodeld in Sources */,
+				ECAECE4428B67431008E7419 /* Post+CoreDataClass.swift in Sources */,
 				ECAECE0F28B57C46008E7419 /* Post.swift in Sources */,
 				ECAECE3228B5C01F008E7419 /* UserController.swift in Sources */,
 				ECAECE3328B5C01F008E7419 /* UserViewController.swift in Sources */,
+				ECAECE5328B6B046008E7419 /* User+CoreDataClass.swift in Sources */,
 				EC8199EA28B5196300FD5791 /* UserStore.swift in Sources */,
 				ECAECE1428B57CDC008E7419 /* PostRouter.swift in Sources */,
+				ECAECE4528B67431008E7419 /* Post+CoreDataProperties.swift in Sources */,
 				ECAECE0728B53738008E7419 /* ViewLayout.swift in Sources */,
 				EC81999D28B4626400FD5791 /* SceneDelegate.swift in Sources */,
 				EC8199E328B5168000FD5791 /* APICachePolicy.swift in Sources */,
+				ECAECE5428B6B046008E7419 /* User+CoreDataProperties.swift in Sources */,
 				EC8199DD28B5165B00FD5791 /* APIError.swift in Sources */,
 				EC8199E028B5166E00FD5791 /* APIConfig.swift in Sources */,
 				EC8199F328B52E5400FD5791 /* ColorScheme.swift in Sources */,

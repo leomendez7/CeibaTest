@@ -8,11 +8,14 @@
 import UIKit
 import Lottie
 import ObjectMapper
+import CoreData
 
 class BaseViewController: UIViewController {
     
     public var animationView: AnimationView = AnimationView(name: "loading")
     public let backgroundLoadingView = UIView()
+    private var hiddenTimer: Timer?
+    public let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,9 +59,19 @@ class BaseViewController: UIViewController {
         configurateAnimationView()
         backgroundLoadingView.isHidden = false
         animationView.play()
+        
     }
 
     func stopAnimate() {
+        hiddenTimer?.invalidate()
+        hiddenTimer = Timer.scheduledTimer(timeInterval: TimeInterval(2.0),
+                                           target: self,
+                                           selector: #selector(dissmisLoading),
+                                           userInfo: nil,
+                                           repeats: true)
+    }
+    
+    @objc func dissmisLoading() {
         animationView.stop()
         backgroundLoadingView.isHidden = true
     }

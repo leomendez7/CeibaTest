@@ -18,7 +18,7 @@ public struct UserStore {
         return request
     }
     
-    public func fetchUsers( _ completion: @escaping(_ users: [Publisher]?) -> Void) {
+    public func fetchUsers( _ completion: @escaping(_ users: [UserMapper]?) -> Void) {
          let request = requestRouter()
         AF.request(request).validate().responseJSON { response in
             guard let statusCode = response.response?.statusCode else { return completion(nil) }
@@ -26,7 +26,7 @@ public struct UserStore {
                 switch response.result {
                 case .success(let value):
                     if let value = value as? [[String: Any]] {
-                        let users = Mapper<Publisher>().mapArray(JSONArray: value)
+                        let users = Mapper<UserMapper>().mapArray(JSONArray: value)
                         completion(users)
                     } else {
                         completion(nil)

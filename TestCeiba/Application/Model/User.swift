@@ -7,11 +7,10 @@
 
 import ObjectMapper
 
-public struct Publisher: Mappable {
+public struct UserMapper: Mappable {
     
     public var id: Int = 0
     public var name: String = ""
-    public var username: String = ""
     public var email: String = ""
     public var phone: String = ""
     
@@ -21,7 +20,6 @@ public struct Publisher: Mappable {
     public mutating func mapping(map: Map) {
         id <- map["id"]
         name <- map["name"]
-        username <- map["username"]
         email <- map["email"]
         phone <- map["phone"]
     }
