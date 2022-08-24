@@ -47,6 +47,7 @@
 		ECAECE4C28B6AB3D008E7419 /* ManagedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE4B28B6AB3D008E7419 /* ManagedParser.swift */; };
 		ECAECE5328B6B046008E7419 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE5128B6B046008E7419 /* User+CoreDataClass.swift */; };
 		ECAECE5428B6B046008E7419 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE5228B6B046008E7419 /* User+CoreDataProperties.swift */; };
+		ECAECE5728B6BBCE008E7419 /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAECE5628B6BBCE008E7419 /* Default.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		ECAECE4B28B6AB3D008E7419 /* ManagedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedParser.swift; sourceTree = "<group>"; };
 		ECAECE5128B6B046008E7419 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		ECAECE5228B6B046008E7419 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ECAECE5628B6BBCE008E7419 /* Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 		EC8199C228B481E200FD5791 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				ECAECE5528B6BBC0008E7419 /* Default */,
 				EC8199E428B5176100FD5791 /* User */,
 				ECAECE1028B57CBF008E7419 /* Post */,
 			);
@@ -382,6 +385,14 @@
 			path = Array;
 			sourceTree = "<group>";
 		};
+		ECAECE5528B6BBC0008E7419 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				ECAECE5628B6BBCE008E7419 /* Default.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -475,6 +486,7 @@
 				ECAECE0928B538A7008E7419 /* KeyboardAwareConstraint.swift in Sources */,
 				EC8199D428B5161B00FD5791 /* Router.swift in Sources */,
 				EC8199D728B5163500FD5791 /* APIQuery.swift in Sources */,
+				ECAECE5728B6BBCE008E7419 /* Default.swift in Sources */,
 				EC8199F628B5318F00FD5791 /* BaseViewController.swift in Sources */,
 				ECAECE1228B57CCE008E7419 /* PostStore.swift in Sources */,
 				EC81999B28B4626400FD5791 /* AppDelegate.swift in Sources */,

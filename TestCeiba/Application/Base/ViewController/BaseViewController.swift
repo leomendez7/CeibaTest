@@ -8,11 +8,13 @@
 import UIKit
 import Lottie
 import ObjectMapper
+import CoreData
 
 class BaseViewController: UIViewController {
     
     public var animationView: AnimationView = AnimationView(name: "loading")
     public let backgroundLoadingView = UIView()
+    public let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()

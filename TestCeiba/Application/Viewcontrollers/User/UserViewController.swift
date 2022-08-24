@@ -26,7 +26,6 @@ class UserViewController: BaseViewController, UISearchResultsUpdating {
             tableView.reloadData()
         }
     }
-    let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     
     @IBOutlet weak var tableView: UITableView!
     

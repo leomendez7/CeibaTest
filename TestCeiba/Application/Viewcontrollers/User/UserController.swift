@@ -33,7 +33,7 @@ extension UserViewController {
                 fetchUsers()
             } else {
                 self.users = users
-                print(users)
+                print("\(users)\n")
             }
         } catch let error as NSError {
             print("Error fetch core data: \(error.localizedDescription)")

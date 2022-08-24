@@ -11,6 +11,7 @@ class PostViewController: BaseViewController {
     
     var user = Publisher()
     let postStore = PostStore()
+    var postCoreData = [Post]()
     var tableData = [UserPost]()
     var posts = [UserPost]() {
         didSet {
@@ -27,7 +28,7 @@ class PostViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUser()
-        fetchPost()
+        fetchPostCoreData()
     }
     
     func configureUser() {
