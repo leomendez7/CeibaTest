@@ -127,10 +127,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="nlh-8E-uAk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2nU-a6-LFJ"/>
-                            <constraint firstItem="nlh-8E-uAk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Pk4-sU-vy1"/>
-                            <constraint firstItem="nlh-8E-uAk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ukh-4c-lIV"/>
-                            <constraint firstItem="nlh-8E-uAk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xwz-Dw-Pxe"/>
+                            <constraint firstItem="nlh-8E-uAk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Had-Hn-YYO"/>
+                            <constraint firstItem="nlh-8E-uAk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dkN-tN-3oh"/>
+                            <constraint firstItem="nlh-8E-uAk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tvF-zV-dOz"/>
+                            <constraint firstItem="nlh-8E-uAk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="vIh-Zt-OqN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Usuarios" id="O5t-bR-8Wj"/>

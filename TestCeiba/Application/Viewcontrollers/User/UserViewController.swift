@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class UserViewController: BaseViewController, UISearchResultsUpdating {
     
@@ -16,6 +17,7 @@ class UserViewController: BaseViewController, UISearchResultsUpdating {
     let userStore = UserStore()
     var filteredTableData = [Publisher]()
     var tableData = [Publisher]()
+    var userCoreData = [User]()
     var resultSearchController = UISearchController()
     var selectUser = Publisher()
     var users = [Publisher]() {
@@ -24,12 +26,13 @@ class UserViewController: BaseViewController, UISearchResultsUpdating {
             tableView.reloadData()
         }
     }
+    let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchUsers()
+        fetchUserCoreData()
         resultSearchConfig()
     }
     
